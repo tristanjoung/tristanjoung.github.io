@@ -1,4 +1,4 @@
-import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+// import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 const width = 700;
 const height = 700;
@@ -8,7 +8,7 @@ let circles = [];
 let svgArt;
 let circleId = 0;
 
-async function drawVis(){
+function drawVis(){
     svgArt=d3.select("#canvas")
     .attr("width", width)
     .attr("height", height);
@@ -51,8 +51,8 @@ function updateCircles(){
     
 }
 
-async function runApp() {
-    await drawVis();
+function runApp() {
+    drawVis();
 }
 
 runApp();
